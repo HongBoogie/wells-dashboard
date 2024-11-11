@@ -1,21 +1,11 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Droplets, Wind, Timer, Settings, Activity } from "lucide-react";
 import DashboardImg from "@/components/ui/dashboard";
 
 const Home = () => {
-  const [activeDevice, setActiveDevice] = useState("정수기");
-
-  // 샘플 사용량 데이터
-  const usageData = [
-    { name: "1월", 정수기: 400, 공기청정기: 240, 비데: 180 },
-    { name: "2월", 정수기: 300, 공기청정기: 320, 비데: 190 },
-    { name: "3월", 정수기: 450, 공기청정기: 280, 비데: 170 },
-    { name: "4월", 정수기: 380, 공기청정기: 290, 비데: 200 },
-  ];
-
   return (
     <div className="max-w-6xl p-4 mx-auto space-y-6">
       <h1 className="mb-6 text-2xl font-bold">Wells 스마트홈 대시보드</h1>
